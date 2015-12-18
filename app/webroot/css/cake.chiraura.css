@@ -7,73 +7,99 @@ body {
 	background: #fff;
 	overflow: scroll;
 }
+.title {
+	width: 900px;
+	margin: 0 auto;
+}
 
 /* ヘッダー */
 header {
 	border-bottom: solid 1px;
 }
 header .title {
-	width: 900px;
 	height: 48px;
-	margin: 0 auto;
 }
 header h1 {
 	margin: 0;
 }
 
-/* コンテント */
+/* 中身 */
 #content {
 	width: 900px;
 	margin: 0 auto;
 	padding: 5px;
 }
 
-/* マイン */
+/* 私 */
 #mine {
-	width: 100%;
-	height: 150px;
-	text-align: center;
-}
-#mine .reaction {
-	width: 100%;
-	height: 40%;
-}
-#mine .cheer,
-#mine .sympathy,
-#mine .favorite {
-	display: inline-box;
-	width: 32.89%;
-	height: 100%;
-	margin: 1px;
-	border: solid 1px #000;
-	float: left;
-}
-#mine p {
-	margin: 0;
-	font-size: 25px;
+	width: 90%;
+	height: 250px;
+	margin: 0 auto;
 }
 #mine form {
-	height: 60%;
+	height: 100%;
 	padding: 5px;
 	clear: both;
 }
-#mine textarea {
-	width: 500px;
-	height: 80%;
+#mine textarea {	/* 独り言 */
+	display: block;
+	width: 50%;
+	height: 200px;
 	border: none;
 	background: #e6b7c1;
+	float: left;
+}
+#mine .control {
+	width: 45%;
+	height: 200px;
+	float: right;
+}
+#mine .color_select {	/* 色選択 */
+	width: 100%;
+	height: 70%;
+}
+#mine .color {
+	width: 50px;
+	height: 50px;
+	border: solid 1px #000;
+	margin-right: 2%;
+	float: left;
 }
 #mine input[type="submit"] {
-	
+	display: block;
+	width: 80px;
+	height: 40px;
+	clear: both;
+}
+
+/* みんな */
+#everyone {
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#everyone .who {
+	background: #e6b7c1;
+}
+#everyone .reaction {	/* 反応 */
+	width: 100%;
+	height: 40%;
+}
+#everyone .cheer,		/* 応援 */
+#everyone .sympathy {	/* 共感 */
+	display: inline-box;
+	width: 49.5%;
+	height: 100%;
+	margin: 1px;
+
 }
 
 /* フッター */
 footer {
 	border-top: solid 1px;
+	clear: both;
 }
 footer .title {
-	width: 900px;
 	height: 25px;
-	margin: 0 auto;
 	padding: 5px;
 }

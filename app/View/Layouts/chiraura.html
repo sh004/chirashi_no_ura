@@ -8,41 +8,51 @@
 		echo $scripts_for_layout; ?>
 </head>
 <body>
-	<header>
+	<header><!-- ヘッダー -->
 		<div class="title">
 			<h1><?php echo $title_for_layout; ?></h1>
 		</div>
 	</header>
 
-	<div id="content">
-		<div id="mine">
-			<div class="reaction">
-				<div class="cheer">
-					<p>5</p>
-					応援
-				</div>
-				<div class="sympathy">
-					<p>3</p>
-					共感
-				</div>
-				<div class="favorite">
-					<p>10</p>
-					お気に入り
-				</div>
-			</div>
-			
+	<div id="content"><!-- 中身 -->
+	
+		<div id="mine"><!-- 私 -->
 			<form>
-				<textarea  name="scolding"></textarea>
-				<input type="submit" />
+				<textarea name="soliloquy"></textarea><!-- 独り言 -->
+				<div class="control">
+					<div class="color_select">
+						<p>COLOR</p>
+						<div class="color"></div>
+						<div class="color"></div>
+						<div class="color"></div>
+						<div class="color"></div>
+						<div class="color"></div>
+					</div>
+					<input type="submit" value="送信">
+				</div>
+
 			</form>
 		</div>
 		
-		<div id="everyone">
+		<div id="everyone"><!-- みんな -->
+		
+			<div class="who"><!-- 誰か -->
+				<div class="soliloquy">あいうえお</div><!-- 独り言 -->
+				<div class="reaction"><!-- 反応 -->
+					<div class="cheer"><!-- 応援 -->
+						応援
+					</div>
+					<div class="sympathy"><!-- 共感 -->
+						共感
+					</div>
+				</div>
+			</div>
 			
 		</div>
+		
 	</div>
 	
-	<footer>
+	<footer><!-- フッター -->
 		<div class="title">
 			<small>&copy; 2015　chirashi no ura</small>
 		</div>
